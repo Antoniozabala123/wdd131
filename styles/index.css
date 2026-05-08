@@ -68,7 +68,7 @@ h1 {
 .card {
     flex: 1;
     border: 1px solid #2e5a88;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
 
 }
