@@ -6,6 +6,10 @@
 
 body {
     font-family: "Sansita", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333
 }
 
 header {
@@ -46,14 +50,13 @@ h1 {
 }
 .grid-container {
     display: grid;
-    gap: 20px;
+    gap: 10px;
     margin: 0 auto;
-    padding: 50px;
-    grid-template-areas:
-    "header header"
-    "menu content"
-    "footer footer";
-    grid-template-columns: 1fr 3fr;
+    padding: 0 150px;
+    grid-template-columns: 1fr 1fr;
+    top: 30px;
+    left: 30px;
+    position: relative;
 }
 .card-header {
     background-color: #2e5a88;
@@ -67,8 +70,33 @@ h1 {
     border: 1px solid #2e5a88;
     border-radius: 8px;
     overflow: hidden;
+
 }
 
 .card-content{
-    padding: 20px;
+    padding: 70px;
+}
+.profile-img {
+    float: right;
+    width: 120px;
+    margin-left: 15px;
+    border: 1px solid #ccc;
+}
+.flag {
+    float: left;   
+    width: 100px;
+    margin-left: 0px;
+    border: 1px solid #ccc;
+}
+h2{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.5rem;
+}
+footer {
+    background-color: #2e5a88;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
 }
