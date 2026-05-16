@@ -70,3 +70,42 @@ nav a:hover {
         flex: 1 1 100%;
     }
 }
+h2{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2.5rem;
+}
+div.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 15px;
+    
+}
+
+div.gallery-item {
+    margin: 10px;
+    border: 1px solid #ccc;
+    
+}
+
+div.gallery-item:hover {
+    border: 1px solid #777;
+    
+}
+
+div.gallery-item img {
+    width: 100%;
+}
+
+div.gallery-item div.desc {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #520469;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
