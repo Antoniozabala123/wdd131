@@ -8,5 +8,5 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 
     // Cambiar el texto del botón
-    hamButton.textContent = navigation.classList.contains('open') ? 'X' : '☰';
+    hamButton.textContent = navigation.classList.contains('open') ? '☰' : '☰';
 });
