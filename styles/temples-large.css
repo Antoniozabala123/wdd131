@@ -7,9 +7,7 @@
 header {
         display: flex;
         flex-direction: row;
-        /* Alinea h1 e icono en fila */
         flex-wrap: wrap;
-        /* Permite que el menú baje al abrirse */
         justify-content: space-between;
         align-items: center;
         padding: 1rem 5%;
@@ -18,18 +16,14 @@ header {
     }
 
         nav.open {
+            display: flex;
+            flex-direction: row;
             display: block;
             width: 100%;
             text-align: center;
             background-color: #000;
         }
-    
-nav ul {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 1rem 0;
- }
+
     
 nav {
      display: none;
