@@ -32,7 +32,6 @@ nav {
 
 .container {
         grid-template-columns: 1fr;
-        /* Una sola columna */
         gap: 20px;
 }
 
