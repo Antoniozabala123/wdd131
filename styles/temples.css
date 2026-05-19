@@ -25,9 +25,6 @@ body {
      padding: 0.5rem;
  }
 
- .open li {
-     display: block;
- }
 
  nav a {
      flex: 1 1 100%;
