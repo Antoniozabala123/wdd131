@@ -43,7 +43,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-end;
 }
 
