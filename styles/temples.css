@@ -7,16 +7,31 @@
 body {
     font-family: "Sansita", sans-serif;
 }
+ header {
+     background-color: #520469;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 10%;
+     min-height: 80px;
+ }
+ #menu {
+     display: none;
+     font-size: 2.5rem;
+     background: none;
+     border: none;
+     color: white;
+     cursor: pointer;
+     padding: 0.5rem;
+ }
 
-/* mobile **************************/
-header {
-    background-color: #520469;
-    display: grid;
-    grid-gap: 1rem;
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 30px #333;
-}
+ .open li {
+     display: block;
+ }
+
+ nav a {
+     flex: 1 1 100%;
+ }
 
 header,
 main {
@@ -36,6 +51,8 @@ nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    flex-direction: row;
 }
 
 nav a {
@@ -51,25 +68,11 @@ nav a:hover {
 
     color: #04AA6D;
 }
-
-@media (min-width: 840px) {
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 10%;
-        min-height: 80px;
-    }
-
-    nav ul {
-        justify-content: flex-end;
-        flex-direction: row;
-    }
-
-    nav a {
-        flex: 1 1 100%;
-    }
+.open li {
+    display: block;
 }
+
+
 h2{
     text-align: center;
     margin: 30px 0;
@@ -114,3 +117,7 @@ footer {
     padding: 30px;
     margin-top: 40px;
 }
+
+
+
+
