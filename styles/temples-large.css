@@ -22,7 +22,12 @@ header {
             width: 100%;
             text-align: center;
             background-color: #000;
-        }
+}
+nav ul {
+            display: flex;
+            flex-direction: column;
+            flex-direction: row;
+}
 
     
 nav {
