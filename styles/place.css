@@ -1,15 +1,15 @@
 :root {
-    /* Colores */
-    --color-primary: #ca0505e8;
+
+    --color-primary: #0d036de8;
     --color-text-light: #ffffff;
     --color-bg-card: #ffffff;
     --color-border: #f0f0f0;
 
-    /* Tipografía */
+    
     --font-main: "Fira Sans", sans-serif;
     --font-weight-light: 250;
 
-    /* Sombras y Bordes */
+    
     --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.15);
     --shadow-mobile: 0 5px 15px rgba(0, 0, 0, 0.1);
     --border-radius-card: 20px;
