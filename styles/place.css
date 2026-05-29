@@ -1,0 +1,118 @@
+:root {
+    /* Colores */
+    --color-primary: #ca0505e8;
+    --color-text-light: #ffffff;
+    --color-bg-card: #ffffff;
+    --color-border: #f0f0f0;
+
+    /* Tipografía */
+    --font-main: "Fira Sans", sans-serif;
+    --font-weight-light: 250;
+
+    /* Sombras y Bordes */
+    --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.15);
+    --shadow-mobile: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --border-radius-card: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "var(--font-main)";
+    font-weight: var(--font-weight-light);
+    font-style: normal;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: 2rem 3rem;
+}
+
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data-card {
+    background: var(--color-bg-card);
+    border-radius: var(--border-radius-card);
+    padding: 15px;
+    margin: 1rem;
+    box-shadow: var(--shadow-card);
+    width: 300px;
+    position: absolute;
+    left: 100px;
+    top: 300px;
+}
+
+.weather {
+    background: var(--color-bg-card);
+    border-radius: var(--border-radius-card);
+    padding: 15px;
+    box-shadow: var(--shadow-card);
+    width: 300px;
+    position: absolute;
+    right: 70px;
+    top: 1170px;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.weather-icon {
+    filter: brightness(0) invert(0.7);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    align-items: center;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 1.5rem;
+
+}
+
+#lastModified {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+
+
+
+

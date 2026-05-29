@@ -10,25 +10,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
 
 <link rel="stylesheet" href="styles/place.css">
-<link rel="stylesheet" href="styles/temples-large.css">
+<link rel="stylesheet" href="styles/large-place.css">
+
 </head>
 <body>
     <header><h1>Japan</h1></header>
-<main>
+    <main class="container">
     <div class="hero-section">
-    <picture class="hero">
-        <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
-        <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
-        <img src="images/hero-small.webp" alt="Tokyo Tower - Japan">
-    </picture>
+        <picture class="hero">
+            <source srcset="images/large.webp" media="(min-width: 1000px)">
+            <source srcset="images/medium.webp" media="(min-width: 550px)">
+            <img src="images/small.webp" alt="Tokyo Tower - Japan" width="1500" height="750"> 
+        </picture>
     </div>
     <section class="data-card">
-        <div class="card-title">
-            <h2>Data</h2>
-        </div>
+        <div class="card-title"><h2>Data</h2></div>
+
     <div class="row">
         <div class="col">Area:</div>
         <div class="col">377,975 sq km</div>
@@ -62,14 +62,12 @@
         <div class="col">.jp</div>
     </div>
 </section>
-<section class="card-weather">
-    <div class="card-title">
-        <h2>Weather</h2>
+<section class="card weather">
+    <div class="card-title"><h2>Weather</h2>
+        <img src="images/cloud-solid-full.svg" alt="weather icon" width="50" class="weather-icon">
     </div>
-    <div class="card-body">
-        <div class="mobile-weather-icon">
-            <img src="images/cloud-solid-full.svg" alt="weather icon" width="50">
-        </div>
+       
+
         <div class="row">
             <div class="col">Temperature:</div>
             <div class="col">15 °C</div>
@@ -86,13 +84,13 @@
             <div class="col">Wind Chill:</div>
             <div class="col">14 °C</div>
         </div>
-    </div>
-    </section>
-</main>
-<footer>
-    <p>&copy; <span id="currentYear"></span> Antonio Zabala - Caracas</p>
-    <p>Last Modification: <span id="lastModified"></span></p>
-</footer>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Antonio Zabala - Caracas</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
     
 </body>
 </html>
