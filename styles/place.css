@@ -79,7 +79,7 @@ header {
     top: 1170px;
 }
 
-.card-title {
+.card-title::after {
     display: flex;
     align-items: center;
     margin: 15px;
