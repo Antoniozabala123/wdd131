@@ -66,7 +66,7 @@ header {
     position: absolute;
     left: 100px;
     top: 300px;
-}
+    }
 
 .weather {
     background: var(--color-bg-card);
@@ -78,14 +78,14 @@ header {
     right: 70px;
     top: 1170px;
 }
-
-.card-title::after {
+ 
+.card-title {
     display: flex;
     align-items: center;
     margin: 15px;
 }
 
-.weather-icon {
+.weather-icon::after{
     filter: brightness(0) invert(0.7);
 }
 
