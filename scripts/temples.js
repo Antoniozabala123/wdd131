@@ -12,3 +12,5 @@ hamButton.addEventListener('click', () => {
     
     hamButton.textContent = navigation.classList.contains('open') ? 'X' : '☰';
 });
+
+
