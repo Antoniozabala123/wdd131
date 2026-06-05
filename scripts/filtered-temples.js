@@ -12,9 +12,7 @@ hamButton.addEventListener('click', () => {
 
     hamButton.textContent = navigation.classList.contains('open') ? 'X' : '☰';
 });
-function toggleactive(Element) {
-    
-}
+
 const temples = [
     
      {
@@ -114,10 +112,33 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
     },
 ];
+const homeLink = document.querySelector("#home-link");
+const oldLink = document.querySelector("#old-link");
+const newLink = document.querySelector("#new-link");
+const largeLink = document.querySelector("#large-link");
+const smallLink = document.querySelector("#small-link");
 
-createtemplecard();
-function createtemplecard() {
-    temples.forEach(temple => {
+homeLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => !temple.location.includes("temples")));
+});
+oldLink.addEventListener("click", () =>
+    createTempleCard(temples.filter(t => parseInt(t.dedicated.split(',')) < 1900)));
+
+newLink.addEventListener("click", () =>
+    createTempleCard(temples.filter(t => parseInt(t.dedicated.split(',')) > 2000)));
+
+largeLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+smallLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+});
+
+createTempleCard(temples)
+
+function createTempleCard(filteredtemples) {
+    document.querySelector(".container.stdlf").innerHTML = "";
+    filteredtemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
@@ -143,3 +164,4 @@ function createtemplecard() {
         document.querySelector(".container.stdlf").appendChild(card);
     });
 }
+
