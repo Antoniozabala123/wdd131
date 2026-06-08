@@ -40,7 +40,9 @@ legend {
     margin-bottom: 0.3rem;
 }
 label {
-    display: block;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
 }
 
 
