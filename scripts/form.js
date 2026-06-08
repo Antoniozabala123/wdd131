@@ -9,11 +9,11 @@ document.getElementById("lastModified").innerHTML = document.lastModified;
     ];
 
 document.addEventListener("DOMContentLoaded", () => {
-        const selectElement = document.getElementById("product");
-        products.forEach(product => {
-            const option = document.createElement("option");
+    const selectElement = document.getElementById("product");
+    products.forEach(product => {
+        const option = document.createElement("option");
         option.value = product.name;
-        option.textContent = product.name;
+        option.textContent = '${ product.name } (${ product.averagerating })';
         selectElement.appendChild(option);
-        });
+    });
 });
