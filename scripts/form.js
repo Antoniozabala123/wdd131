@@ -1,6 +1,7 @@
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").innerHTML = document.lastModified;
-        
+
+
     const products = [
         { id: "banana", name: "banana", averagerating: 4.5 },
         { id: "apple", name: "apple", averagerating: 4.6 },
@@ -9,11 +10,11 @@ document.getElementById("lastModified").innerHTML = document.lastModified;
     ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    const selectElement = document.getElementById("product");
+    const productSelect = document.getElementById("product");
     products.forEach(product => {
         const option = document.createElement("option");
         option.value = product.name;
-        option.textContent = '${ product.name } (${ product.averagerating })';
-        selectElement.appendChild(option);
+        option.textContent = `${product.name} (${product.averagerating})`;
+        productSelect.appendChild(option);
     });
 });
