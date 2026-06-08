@@ -2,13 +2,13 @@ document.getElementById("currentYear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").innerHTML = document.lastModified;
         
     const products = [
-    {id: "banana", name: "banana" },
-    {id: "apple", name: "apple" },
-    {id: "orange", name: "orange" },
-    {id: "lemon", name: "lemon" }
+        { id: "banana", name: "banana", averagerating: 4.5 },
+        { id: "apple", name: "apple", averagerating: 4.6 },
+        { id: "orange", name: "orange", averagerating: 4.7 },
+        { id: "lemon", name: "lemon", averagerating: 4.8 },
     ];
 
-        
+document.addEventListener("DOMContentLoaded", () => {
         const selectElement = document.getElementById("product");
         products.forEach(product => {
             const option = document.createElement("option");
@@ -16,3 +16,4 @@ document.getElementById("lastModified").innerHTML = document.lastModified;
         option.textContent = product.name;
         selectElement.appendChild(option);
         });
+});
