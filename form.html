@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Antonio Zabala".</title>
+    <meta name="author" content="Antonio Zabala">
+    
+    <script src="scripts/form.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<header>
+    <h1>Product Review</h1>
+</header>
+<main>
+    <form method="get" action="review.html">
+        <label for="product">Product Name</label>
+        <select id="product" name="product_name" required>
+
+            <option value="" disabled selected>Select a Product ...</option>
+
+        </select>
+        <Fieldset>
+        <legend>Overall Rating</legend>
+        <label><input type="radio" name="Rating" value="1">☆</label>
+        <label><input type="radio" name="Rating" value="2">☆☆</label>
+        <label><input type="radio" name="Rating" value="3">☆☆☆</label>
+        <label><input type="radio" name="Rating" value="4">☆☆☆☆</label>
+        <label><input type="radio" name="Rating" value="4">☆☆☆☆☆</label>
+            
+        </Fieldset>
+        <fieldset>
+            <legend>date installation</legend>
+            <label><input type="date" name="completedate"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>which features did you find useful in the product?
+                (check  all that apply)</legend>
+                <label><input type="checkbox" name="editing" value="yes">Durability</label>
+                <label><input type="checkbox" name="editing" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="editing" value="yes">Performance</label>
+                <label><input type="checkbox" name="editing" value="yes">Design</label>
+        </fieldset>
+<fieldset>
+   <label for="review"> Written Review (Optional)</label>
+   <textarea name="review" id="review" rows="4" cols="200"></textarea>
+</fieldset>
+<fieldset>
+    <label for="user_name">Your Name (Optional)</label>
+    <input type="text" id="user_name" name="user_name" placeholder="e.g. John Doe">
+</fieldset>
+
+<input type="submit" value="Post Review">
+    </form>
+</main>
+<footer>
+    <p>&copy; <span id="currentYear"></span> Antonio Zabala - Caracas</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+<body>
+    
+</body>
+</html>
