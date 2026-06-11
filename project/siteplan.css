@@ -5,7 +5,12 @@
     margin: 0;
     padding: 0;
 }
-
+.wireframe-itemitem{
+display: flex;
+flex-direction: column;
+margin-left: auto;
+margin-right: auto;
+}
 body {
     min-height: 100vh;
     font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
@@ -103,4 +108,6 @@ h1 {
     background: #333;
     color: #fff;
     border: none;
+}
+.wireframe-itemitem{
 }
