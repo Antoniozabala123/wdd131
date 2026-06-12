@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     products.forEach(product => {
         const option = document.createElement("option");
         option.value = product.id;
-        option.textContent = `${product.name} (${product.averagerating})`;
+        option.value = product.id;
         productSelect.appendChild(option);
     });
 });
