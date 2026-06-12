@@ -18,3 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
         productSelect.appendChild(option);
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    let reviewCount = parseInt(localStorage.getItem("review.html")) || 0;
+    reviewCount += 1;
+    localStorage.setItem("review.html", reviewCount);
+});
