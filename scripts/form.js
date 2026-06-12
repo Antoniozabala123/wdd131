@@ -1,7 +1,3 @@
-document.getElementById("currentYear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").innerHTML = document.lastModified;
-
-
 const products = [
     {
         id: "fc-1888",
@@ -45,3 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
     reviewCount += 1;
     localStorage.setItem("review.html", reviewCount);
 });
+
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").innerHTML = document.lastModified;
