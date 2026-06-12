@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    let reviewCount = parseInt(localStorage.getItem("review.html")) || 0;
+    let reviewCount = parseInt(localStorage.getItem("reviewCounter")) || 0;
     reviewCount += 1;
-    localStorage.setItem("review.html", reviewCount);
+    localStorage.setItem("reviewCounter", reviewCount);
 });
 
 document.getElementById("currentYear").textContent = new Date().getFullYear();
