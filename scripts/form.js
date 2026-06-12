@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const productSelect = document.getElementById("product");
     products.forEach(product => {
         const option = document.createElement("option");
-        option.value = product.name;
+        option.value = product.id;.
         option.textContent = `${product.name} (${product.averagerating})`;
         productSelect.appendChild(option);
     });
