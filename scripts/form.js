@@ -1,4 +1,3 @@
-console.log("review.js loaded successfully")
 const products = [
     {
         id: "fc-1888",
