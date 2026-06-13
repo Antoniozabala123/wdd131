@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>review confirmation</title>
     <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js" defer></script>
+    <script>document.addEventListener("DOMContentLoaded", () => {
+
+            let reviewCount = parseInt(localStorage.getItem("reviewCounter")) || 0;
+            reviewCount += 1;
+            localStorage.setItem("reviewCounter", reviewCount);
+            const displayElement = document.getElementById("reviewDisplay");
+            if (displayElement) {
+                displayElement.textContent = reviewCount;
+            }
+        });</script>
 </head>
     <body>
         <header>

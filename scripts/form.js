@@ -37,16 +37,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    
-    let reviewCount = parseInt(localStorage.getItem("reviewCounter")) || 0;
-    reviewCount += 1;
-    localStorage.setItem("reviewCounter", reviewCount);
-    const displayElement = document.getElementById("reviewDisplay");
-    if (displayElement) {
-        displayElement.textContent = reviewCount;
-    }
-});
-
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").innerHTML = document.lastModified;
