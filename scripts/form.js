@@ -38,5 +38,22 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Obtiene el número actual de reseñas guardadas (o empieza en 0)
+    let reviewCount = parseInt(localStorage.getItem("reviewCounter")) || 0;
+
+    // 2. Suma 1 porque el usuario completó el formulario con éxito
+    reviewCount += 1;
+
+    // 3. Guarda el nuevo número actualizado en el localStorage del navegador
+    localStorage.setItem("reviewCounter", reviewCount);
+
+    // 4. Muestra el número en el HTML (busca el elemento con id="reviewDisplay")
+    const displayElement = document.getElementById("reviewDisplay");
+    if (displayElement) {
+        displayElement.textContent = reviewCount;
+    }
+});
+
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").innerHTML = document.lastModified;
