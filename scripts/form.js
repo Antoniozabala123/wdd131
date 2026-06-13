@@ -1,3 +1,4 @@
+console.log("review.js loaded successfully")
 const products = [
     {
         id: "fc-1888",
@@ -36,11 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    let reviewCount = parseInt(localStorage.getItem("reviewCounter")) || 0;
-    reviewCount += 1;
-    localStorage.setItem("reviewCounter", reviewCount);
-});
 
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").innerHTML = document.lastModified;
