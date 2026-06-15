@@ -40,3 +40,12 @@ nav a {
     font-size: larger;
     flex: 1 1 100%;
 }
+#menu {
+    display: none;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+}
