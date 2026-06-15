@@ -49,3 +49,13 @@ nav a {
     cursor: pointer;
     padding: 0.5rem;
 }
+
+.hero{
+    background-color: #b706ec;
+    background-position: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
