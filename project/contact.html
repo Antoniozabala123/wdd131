@@ -51,27 +51,25 @@
     
             <div class="group">
                 <label for="email">Email</label>
-                <!-- Se cambió el tipo a email para validación nativa del navegador -->
                 <input type="text" id="email" name="email" required>
             </div>
     
             <div class="group">
                 <label for="product">Product</label>
-                <!-- Tu JS rellenará este select correctamente al cargar la página -->
+               
                 <select id="product" name="product" required>
                     <option value="" disabled selected>Select a Product ...</option>
                 </select>
             </div>
     
-            <!-- Corrección de accesibilidad: Se agregó la etiqueta legend requerida -->
+            
             <fieldset>
-                <legend></legend>
                 <label for="review">Written Review (Optional)</label>
                 <textarea name="review" id="review" rows="4" cols="50"></textarea>
             </fieldset>
     
             <fieldset>
-                <legend></legend>
+                
                 <label for="user_name">Your Name (Optional)</label>
                 <input type="text" id="user_name" name="user_name" placeholder="e.g. John Doe">
             </fieldset>
