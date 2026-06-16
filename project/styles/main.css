@@ -5,7 +5,7 @@
 }
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
+    color: #212121;
     background-color: #F5F5F5;
     line-height: 1.6;
 }
@@ -23,6 +23,9 @@ header {
     gap: 0.5rem;
     font-size: 2rem;
     font-weight: bold;
+}
+.logo-text{
+    color: #F5F5F5;
 }
 nav ul {
     list-style: none;
@@ -58,4 +61,57 @@ nav a {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+h1{
+    color: #F5F5F5;
+    font-size: 2rem ;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2E7D32;
+    border-bottom: 3px solid #FFC107;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+.welcome{
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.site {
+    
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 3rem; 
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin: 3rem;
+}
+
+.col{
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: #520469;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
 }

@@ -9,3 +9,7 @@ hamButton.addEventListener('click', () => {
 
     hamButton.textContent = navigation.classList.contains('open') ? 'X' : '☰';
 });
+
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").innerHTML = document.lastModified;
+
