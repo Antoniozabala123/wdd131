@@ -67,7 +67,7 @@ h1{
     font-size: 2rem ;
 }
 
-h2 {
+h2,h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #2E7D32;
