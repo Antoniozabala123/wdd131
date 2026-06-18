@@ -81,15 +81,13 @@ nav a {
   width: 100%;
 }
 
-.hero {
-  background-color: #b706ec;
-  background-position: center;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
+h2,h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #2E7D32;
+    border-bottom: 3px solid #FFC107;
+    display: inline-block;
+    padding-bottom: 0.3rem;
 }
 
 h1 {
@@ -101,71 +99,57 @@ h1 {
   font-size: 2rem;
   padding: 0 1rem;
 }
-
-h2,
-h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #2e7d32;
-  border-bottom: 3px solid #ffc107;
-  display: inline-block;
-  padding-bottom: 0.3rem;
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px ;
+    margin: 3rem auto;
+    padding: 2rem 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem ;
+    margin: 3rem 0 ;
+    
+    
+}
+main {
+    width: 100%;
+}
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-/* --- Contenedores y Cajas --- */
-.welcome,
-.site,
-.col,
-.learning,
+.card-body {
+    padding: 2rem;
+}
+
+
 .card-img-top {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 0 auto;
-  width: 100%;
-  max-width: none;
-  margin: 0 auto;
-  text-align: center;
+    width: 100%;  
+    object-fit: cover;
+    display: block;
 }
 
-.container,
-.container-grid {
-  display: flex;
-  flex-direction: column; 
-  gap: 2rem;
-  padding: 1rem;
-  margin: 1.5rem auto;
-  
-  width: 100%;
-  max-width: 450px; 
+.col{
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Las Tarjetas Individuales en Móvil --- */
-.col,
-.welcome,
-.site,
-.learning,
-.card-img-top {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  width: 100%; 
-  box-sizing: border-box;
-}
-.col img,
-.card-img-top img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 1rem auto;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+footer {
+    background-color: #520469;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
 }
 
 /* --- Formulario --- */
@@ -322,5 +306,25 @@ footer {
   footer {
     background-color: #520469;
     width: 100%;
-  }
+    text-align: center;
+    background-color: #000;
+                    }
+
+    .hero-content{
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .card,.col,.container,.contac, .container-grid
+     {
+        grid-template-columns: 1fr;
+    }
+        footer {
+            background-color: #000;
+            color: #fff;
+        }
 }
