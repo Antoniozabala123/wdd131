@@ -132,13 +132,13 @@ h3 {
 .container,
 .container-grid {
   display: flex;
-  flex-direction: column; /* En móvil, una tarjeta abajo de la otra */
+  flex-direction: column; 
   gap: 2rem;
   padding: 1rem;
   margin: 1.5rem auto;
   
   width: 100%;
-  max-width: 450px; /* Limita el ancho del bloque completo en celulares */
+  max-width: 450px; 
 }
 
 /* --- Las Tarjetas Individuales en Móvil --- */
@@ -151,7 +151,7 @@ h3 {
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Ocupa todo el ancho de su contenedor móvil */
+  width: 100%; 
   box-sizing: border-box;
 }
 .col img,
@@ -280,34 +280,34 @@ footer {
 
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 Columnas perfectas para las 3 tarjetas */
+    grid-template-columns: 1fr 1fr 1fr; 
     gap: 2rem;
     margin: 3rem auto;
-    max-width: 1200px; /* Ancho máximo ideal para que respire en pantallas grandes */
+    max-width: 1200px; 
     width: 90%;
   }
 
   .container-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 Columnas para secciones de dos bloques */
+    grid-template-columns: 1fr 1fr; 
     gap: 2rem;
     margin: 3rem auto;
     max-width: 1200px;
     width: 90%;
   }
 
-  /* --- Reseteamos las tarjetas para que se adapten a su columna en PC --- */
+  
   .col,
   .welcome,
   .site,
   .learning,
   .card-img-top {
-    max-width: none; /* Eliminamos el límite de 450px de móvil */
-    height: 100%; /* Hace que todas las tarjetas midan lo mismo de alto */
+    max-width: none; 
+    height: 100%; 
     margin: 0;
   }
 
-  /* --- Asegurar que las imágenes no desborden --- */
+  
   .col img,
   .card-img-top img {
     max-width: 100%;
