@@ -1,40 +1,72 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Siteplan</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header class="row header-area">
-        <div class="col-3 logo">Logo / Hello</div>
-        <div class="col-9 title">My Website Plan</div>
-      </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Document | Antonio Zabala</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Antonio Zabala">
+    <meta name="author" content="Antonio Zabala">
+    
+    <script src="script/main.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/siteplan.css">
+    
+</head>
+    <body>
+        <div class="container">
+            <header class="row header-area">
+                <div class="col-3 logo">Logo / Hello</div>
+                <div class="col-9 title">My Website Plan</div>
+            </header>
 
-      <h1>My Wireframe Plan</h1>
-
-      <div class="row">
-        <nav class="col-12 bar">
-          <a href="#">Home</a>
-          <a href="#">Designs</a>
-          <a href="#">About Us</a>
-        </nav>
-      </div>
-
-      <main class="row main-content">
-        <div class="col-8 hero-box">
-          <h2>Hero Image Area</h2>
-          <button class="button">Subscribe</button>
+            <h1>SpeakUp Academy</h1>
+    
+            <div class="row">
+                <nav class="col-12 bar">
+                    <a href="#">Home</a>
+                    <a href="#">Designs</a>
+                    <a href="#">About Us</a>
+                </nav>
+            </div>
+    
+            <main class="row main-content">
+                <div class="col-8 hero-box">
+                    <h2>Hero Image Area</h2>
+                    <button class="button">Subscribe</button>
+                </div>
+                <section class="plan-section">
+                    <h2>1. Site Name</h2>
+                    <p class="highlight">SpeakUp Academy</p>
+                    <p><strong>Reason for choice:</strong> 'Speak Up' is an English phrasal verb that means to express oneself clearly
+                        and without fear. This name perfectly represents the main objective of the portal: helping Spanish speakers
+                        overcome the fear of speaking and develop fluency and confidence from day one.</p>
+                </section>
+                
+                <!-- 5. Site Purpose -->
+                <section class="plan-section">
+                    <h2>2. Site Purpose</h2>
+                    <p>The purpose of this educational platform is to provide an interactive and accessible environment for learning
+                        conversational English. The site will offer essential vocabulary guides for real-world scenarios (travel, work,
+                        interviews), dynamic pronunciation practices, and interactive self-evaluation quizzes.</p>
+                </section>
+            </main>
+    
+            <footer class="row footer">
+                <div class="col-12">
+                    <p>&copy; <span id="currentYear"></span> Antonio Zabala - Caracas</p>
+                    <p>Last Modification: <span id="lastModified"></span></p>
+                </div>
+            </footer>
         </div>
-      </main>
-
-      <footer class="row footer">
-        <div class="col-12">
-          <p>Year - My name</p>
+        <div class="wireframe-item">
+            <h3>Large Viewport Wireframe (Desktop)</h3>
+            <img src="images/diagrama.jpg" alt="Desktop View Wireframe Sketch" width="500">
         </div>
-      </footer>
-    </div>
-  </body>
-</html>
+    </body>
+    
+    </html>

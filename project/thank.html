@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review confirmation</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script>document.addEventListener("DOMContentLoaded", () => {
+
+            let reviewCount = parseInt(localStorage.getItem("reviewCounter")) || 0;
+            reviewCount += 1;
+            localStorage.setItem("reviewCounter", reviewCount);
+            const displayElement = document.getElementById("reviewDisplay");
+            if (displayElement) {
+                displayElement.textContent = reviewCount;
+            }
+        });</script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <p>Your review has been submitted successfully.</p>
+
+        <p>Total reviews submitted: <span id="reviewDisplay">0</span></p>
+        <a href="form.html">Submit another review</a>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Antonio Zabala - Caracas</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

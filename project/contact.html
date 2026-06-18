@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Document | Antonio Zabala</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Antonio Zabala">
+    <meta name="author" content="Antonio Zabala">
+
+    <script src="script/main.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-icon">📚👨‍🎓</span>
+            <span class="logo-text">SpeakUp Academy</span>
+        </div>
+        <button id="menu" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Master English Open Doors to the World</h1>
+            </div>
+       </section>
+    <div class="contact">
+        <h2>Contact us</h2>
+       
+        <form id="contact-form" method="get" action="thank.html">
+            <div class="group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+    
+            <div class="group">
+                <label for="product">Product</label>
+               
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+    
+            
+            <fieldset>
+                <label for="review">Written Review (Optional)</label>
+                <textarea name="review" id="review" rows="4" cols="50"></textarea>
+            </fieldset>
+    
+            <fieldset>
+                
+                <label for="user_name">Your Name (Optional)</label>
+                <input type="text" id="user_name" name="user_name" placeholder="e.g. John Doe">
+            </fieldset>
+    
+            <input type="submit" value="subscribe">
+        </form>
+    </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Antonio Zabala - Caracas</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    </body>
+
+</html>
